@@ -26,6 +26,10 @@
         "projectId": "323658a8-871d-46e4-8101-bc77835437b8"
       }
     },
-    "owner": "jayesh56s-team"
+    "owner": "jayesh56s-team",
+    "plugins": [
+      "expo-secure-store",
+      "expo-web-browser"
+    ]
   }
 }

@@ -10,8 +10,8 @@ import { fetchSms } from './src/sms';
 const CATEGORIES = ['All', 'Critical', 'High', 'Low'];
 const COLORS = { Critical: '#e74c3c', High: '#f39c12', Low: '#27ae60', All: '#5b6ee1' };
 
-const WEB_CLIENT_ID = '623819259507-dpo6j56lsqm1sta7hfuh0urkl490n9cc.apps.googleusercontent.com';
-const ANDROID_CLIENT_ID = 'YOUR_ANDROID_CLIENT_ID.apps.googleusercontent.com';
+const WEB_CLIENT_ID = process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID;
+const ANDROID_CLIENT_ID = process.env.EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID;
 
 export default function App() {
   const [tab, setTab] = useState('All');
